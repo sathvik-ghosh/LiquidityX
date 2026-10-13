@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: liquidityx-tk
+    runtime: docker
+    dockerfilePath: ./Dockerfile.tk
+    plan: starter          # free tier is too small for Xvfb + Tk + matplotlib
+    envVars:
+      - key: VNC_PASSWORD
+        sync: false         # set this in the Render dashboard
+      - key: VIEW_ONLY
+        value: "0"

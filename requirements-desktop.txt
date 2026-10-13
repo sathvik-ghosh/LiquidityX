@@ -1,0 +1,5 @@
+# Only for the optional Tkinter desktop version (python main.py). The web app needs requirements.txt only.
+networkx>=3.2
+matplotlib>=3.8
+numpy>=1.26
+pytest>=8.0
